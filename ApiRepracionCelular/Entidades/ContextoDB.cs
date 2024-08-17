@@ -11,7 +11,6 @@ public partial class ContextoDB : DbContext
     public ContextoDB(DbContextOptions<ContextoDB> options)
         : base(options)
     {
-
     }
 
     public virtual DbSet<Cliente> Cliente { get; set; }
