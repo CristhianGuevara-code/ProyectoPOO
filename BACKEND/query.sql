@@ -47,4 +47,4 @@ insert into Rol(Nombre) values('Administrador'),('Técnico')
 
 -- La clave es 12345678
 insert into Usuario(Nombre,Telefono,Email,Password,IdRol) 
-	values('Maicol','09348-1098','admin@gmail.com','$2a$11$ERFj/NoOCG4j4a/O1FbvdeQSvbSIczz9Nj7f5I6EdZgmqNoQKEC6y',1)
+	values('Maicol','9348-1098','admin@gmail.com','$2a$11$ERFj/NoOCG4j4a/O1FbvdeQSvbSIczz9Nj7f5I6EdZgmqNoQKEC6y',1)

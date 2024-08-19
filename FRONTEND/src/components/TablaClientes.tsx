@@ -7,6 +7,7 @@ function TablaClientes() {
   const {clientes, abrirFormulario, eliminarCliente} = useClienteStore()
 
   return <>
+  <h2>Clientes</h2>
     <Button 
       className="my-3"
       onClick={() => abrirFormulario()}

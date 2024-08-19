@@ -9,8 +9,9 @@ function TablaReparaciones() {
     return lista.reduce((a,b) => a+b.precio,0)
   }
 
-
+ 
   return <>
+   <h2>Reparaciones</h2>
     <Button 
       className="my-3"
       onClick={() => abrirFormulario()}
@@ -34,7 +35,7 @@ function TablaReparaciones() {
         <td>{calcularTotal(x.detalles as any)}</td>
         <td>{x.detalles.map(x => 
           <ListGroup key={x.id}>
-            <ListGroup.Item>${x.precio} {x.descripcion}</ListGroup.Item>
+            <ListGroup.Item>L. {x.precio} {x.descripcion}</ListGroup.Item>
           </ListGroup>          
         )}</td>
         <td>

@@ -1,6 +1,7 @@
 ﻿using ApiRepracionCelular.Controllers.Interfaces;
 using ApiRepracionCelular.Dto;
 using ApiRepracionCelular.Dto.Autenticacion;
+using ApiRepracionCelular.Entidades;
 using ApiRepracionCelular.Servicios.Autenticacion.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -27,12 +28,14 @@ namespace ApiRepracionCelular.Controllers
             try
             {
                 var usuario = await autenticacionService.IniciarSesion(loginDatosDTO);
-                return Ok(new {usuario, jwt = GenerarToken(usuario)});
+                return Ok(new {usuario, jwt = GenerarToken(usuario) });
             }
             catch (Exception e)
             {
                 return BadRequest(new { Mensaje = e.Message });
             }
+          
+
         }
 
         private string GenerarToken(UsuarioDto usuario)

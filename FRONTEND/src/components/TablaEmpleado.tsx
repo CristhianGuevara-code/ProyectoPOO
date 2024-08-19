@@ -7,6 +7,7 @@ function TablaEmpleados() {
   const {empleados, abrirFormulario} = useEmpleadoStore()
 
   return <>
+  <h2>Empleados</h2>
     <Button 
       className="my-3"
       onClick={() => abrirFormulario()}

@@ -114,7 +114,7 @@ function FormReparacion() {
                 className="d-flex justify-content-between align-items-start"
               >
                 <div className="ms-2 me-auto">
-                  <div className="fw-bold">$ {x.precio}</div>
+                  <div className="fw-bold">L. {x.precio}</div>
                   {x.descripcion}
                 </div>
               </ListGroup.Item>)}

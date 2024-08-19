@@ -12,16 +12,21 @@ public partial class ContextoDB : DbContext
         : base(options)
     {
     }
-
+    //Conjunto de datos que representa a los clientes en la base de datos.
     public virtual DbSet<Cliente> Cliente { get; set; }
 
+    //Conjunto de datos que representa las reparaciones en la base de datos.
     public virtual DbSet<Reparacion> Reparacion { get; set; }
 
+    // Conjunto de datos que representa los detalles de las reparaciones en la base de datos.
     public virtual DbSet<ReparacionDetalle> ReparacionDetalle { get; set; }
 
+    // Conjunto de datos que representa los roles de usuario en la base de datos.
     public virtual DbSet<Rol> Rol { get; set; }
 
+    // Conjunto de datos que representa a los usuarios en la base de datos.
     public virtual DbSet<Usuario> Usuario { get; set; }
+
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
